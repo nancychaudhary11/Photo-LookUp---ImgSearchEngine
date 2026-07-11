@@ -37,29 +37,6 @@ Photo-LookUp/
 │── daisy.png
 └── README.md
 
-## 🚀 Getting Started
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/photo-lookup.git
-```
-
-### 2. Open the project
-
-Open the project folder in **VS Code**.
-
-### 3. Add your Unsplash API Key
-
-Open `script.js` and replace the access key with your own.
-
-```javascript
-const accessKey = "YOUR_UNSPLASH_ACCESS_KEY";
-```
-
-### 4. Run the project
-
-Simply open `index.html` in your browser or use the **Live Server** extension.
-
 ## 📷 How It Works
 
 1. Enter any keyword.
@@ -69,6 +46,7 @@ Simply open `index.html` in your browser or use the **Live Server** extension.
 5. Use **Show More** to load additional images.
 
 ## 📸 Preview
+<img width="1365" height="721" alt="Screenshot 2026-07-10 123058" src="https://github.com/user-attachments/assets/54e2e502-c6b4-4718-ba0b-f98b8192e859" />
 
 
 ## 🔮 Future Improvements
