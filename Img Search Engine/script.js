@@ -1,34 +1,28 @@
-
-const accessKey = "xWVXv0Mq1P8sufXKGBPK2S9fnqVxunpy8eucQqsJ-UA";
-
+const accessKey = "xWVXv0Mq1P8sufXKGBPK2S9fnqVxunpy8eucQqsJ-UA"; //access key of unsplash
 const searchForm = document.getElementById("search-form");
 const searchBox = document.getElementById("search-box");
 const searchResult = document.getElementById("search-result");
 const showMoreBtn = document.getElementById("show-more-btn");
 
 let keyword = "";
-let page = 1;
+let page = 1; //page 1
 
 async function searchImages() {
     keyword = searchBox.value.trim();
-
     // Alert if no keyword entered
     if (keyword === "") {
         alert("⚠️ Please enter a search term before searching!");
         return;
     }
-
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}&per_page=24`;
 
-    try {
+    try { //error handling
         const response = await fetch(url);
-
         // Alert if API fails
         if (!response.ok) {
             alert("❌ Unable to fetch images. Please check your internet connection or try again later.");
             return;
         }
-
         const data = await response.json();
 
         // Alert if no results found
@@ -37,8 +31,6 @@ async function searchImages() {
             showMoreBtn.style.display = "none";
             return;
         }
-
-
         if (page === 1) {
             searchResult.innerHTML = " ";
         }
@@ -52,8 +44,6 @@ async function searchImages() {
             imageLink.target = "_blank";
             imageLink.appendChild(image);
             searchResult.appendChild(imageLink);
-
-
         })
         document.body.classList.add("loading");
         document.body.classList.remove("loading");
@@ -64,7 +54,6 @@ async function searchImages() {
         console.error(error);
     }
 }
-
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
     page = 1;
@@ -74,6 +63,4 @@ searchForm.addEventListener("submit", (e) => {
 showMoreBtn.addEventListener("click", () => {
     page++;
     searchImages();
-
-
 });
