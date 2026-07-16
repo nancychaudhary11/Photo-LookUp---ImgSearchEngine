@@ -26,19 +26,8 @@ Photo LookUp is a modern and responsive image search web application that lets u
 - Unsplash API
 - Font Awesome
 
-## 📂 Project Structure
-Photo-LookUp/
-│── index.html
-│── style.css
-│── script.js
-│── manifest.json
-│── icon-192.png
-│── icon-512.png
-│── daisy.png
-└── README.md
 
 ## 📷 How It Works
-
 1. Enter any keyword.
 2. Click **Search**.
 3. Images are fetched from the Unsplash API.
@@ -46,8 +35,9 @@ Photo-LookUp/
 5. Use **Show More** to load additional images.
 
 ## 📸 Preview
-<img width="1365" height="721" alt="Screenshot 2026-07-10 123058" src="https://github.com/user-attachments/assets/54e2e502-c6b4-4718-ba0b-f98b8192e859" />
-
+1. <img width="1365" height="721" alt="Screenshot 2026-07-10 123058" src="https://github.com/user-attachments/assets/54e2e502-c6b4-4718-ba0b-f98b8192e859" />
+2. <img width="1364" height="719" alt="Screenshot 2026-07-10 123136" src="https://github.com/user-attachments/assets/101b752f-6cba-445b-9633-52ea0ddfae94" />
+3. <img width="1365" height="717" alt="Screenshot 2026-07-10 123148" src="https://github.com/user-attachments/assets/68144604-1f30-4c2b-8580-15f9e36b249b" />
 
 ## 🔮 Future Improvements
 
