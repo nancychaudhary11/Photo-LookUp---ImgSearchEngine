@@ -14,7 +14,6 @@ Photo LookUp is a modern and responsive image search web application that lets u
 - 🚫 Input validation for empty searches
 - ❌ Alerts when no images are found
 - 🌈 Modern glassmorphism UI
-- 📱 Responsive design for different screen sizes
 - 🔗 Click any image to view it on Unsplash
 - 📌 Progressive Web App (PWA) support using `manifest.json`
 
